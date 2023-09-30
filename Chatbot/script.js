@@ -4,8 +4,6 @@ const meddelandeInput = document.getElementById('meddelande-input');
 const meddelandeContainer = document.getElementById('chat-messages');
 
 const fordefinieradeFragorSvar = [
-    { fraga: 'BILD SONY', svar: '5d528ff6-3ae1-448b-9ab4-80e21c5385ba.png' },
-    // Lägg till fler frågor och svar här
     { fraga: 'Jag vill ha korv', svar: 'https://www.youtube.com/embed/pdJrOvjbcR8?si=v74tgAUmXyF_iAsp' },
     { fraga: 'jag vill ha en egen måne', svar: 'https://www.youtube.com/embed/HInYeg78sMU?si=BxYFje0RgSulIHw8' },
     // Lägg till fler frågor och YouTube-länkar här
@@ -70,17 +68,22 @@ function skickaMeddelande() {
     const svar = slumpmassigtSvar(meddelande);
 
     if (svar.startsWith('https://www.google.com/maps/')) {
-        // Kod för att visa Google Maps som svar
+        const iframeTagg = document.createElement('iframe');
+        iframeTagg.src = svar;
+        iframeTagg.width = '100%'; // Bredd på kartan (kan justeras efter behov)
+        iframeTagg.height = '300'; // Höjd på kartan (kan justeras efter behov)
+        iframeTagg.allowFullscreen = true;
+        iframeTagg.className = 'chatt-iframe';
+        laggTillSvarElement(iframeTagg);
     } else if (svar.startsWith('https://www.youtube.com/')) {
-        // Kod för att visa YouTube-video som svar
-    } else if (svar.match(/\.(jpeg|jpg|gif|png)$/) != null) {
-        // Om svaret är en bildlänk, skapa ett bild-element och lägg till det i meddelandefältet
-        const bildElement = document.createElement('img');
-        bildElement.src = svar;
-        bildElement.className = 'chatt-bild';
-        laggTillSvarElement(bildElement);
+        const iframeTagg = document.createElement('iframe');
+        iframeTagg.src = svar;
+        iframeTagg.width = '560'; // Bredd på videon (kan justeras efter behov)
+        iframeTagg.height = '315'; // Höjd på videon (kan justeras efter behov)
+        iframeTagg.allowFullscreen = true;
+        iframeTagg.className = 'chatt-iframe';
+        laggTillSvarElement(iframeTagg);
     } else {
-        // Om svaret inte är en länk, lägg till texten i meddelandefältet
         laggTillSvar(svar);
     }
 
@@ -101,5 +104,6 @@ function laggTillSvar(svar) {
     meddelandeDiv.textContent = svar;
     meddelandeContainer.appendChild(meddelandeDiv);
 }
+
 
 
