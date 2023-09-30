@@ -1,0 +1,97 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #151915;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chat-wrapper {
+    width: 100%;
+    max-width: 400px;
+}
+
+.chat-container {
+    background-color: #2f2f2f;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.chat-header {
+    background-color: #1aff00;
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.chat-messages {
+    padding: 15px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.meddelande-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.meddelande-anvandare {
+    background-color: #000000;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 70%;
+    text-align: right;
+    margin-left: auto;
+    color: rgb(38, 255, 0);
+}
+
+.meddelande-svar {
+    background-color: #1aff00;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 70%;
+}
+
+.input-field {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+    width: 290px;
+    background-color: #000000;
+    color: #1aff00;
+}
+
+.skicka-knapp {
+    background-color: #1aff00;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.skicka-knapp:hover {
+    background-color: #13be00;
+}
+.chatt-iframe {
+    width: 100%;
+    height: 150px;
+    border: none;
+}
+.chatt-bild {
+    width: 100%;
+    height: auto;
+}
+
+
+

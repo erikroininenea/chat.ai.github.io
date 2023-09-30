@@ -1,0 +1,1 @@
+width: calc(100% - 60px); /* Gör input-fältet 80px smalare än 100% av förälderens bredd */
