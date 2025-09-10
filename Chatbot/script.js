@@ -24,8 +24,8 @@ const fordefinieradeFragorSvar = [
     { fraga: 'Vem skapade dig?', svar: 'Den 11 årige Erik Roininen. Han är fotbollsspelare och fritids programerare.' },
     { fraga: 'Vem är Erik Roininen?', svar: 'Den 11 årige Erik Roininen. Han är fotbollsspelare och fritids programerare.' },
     { fraga: 'Vem är Eriks pappa?', svar: 'Ari-pekka Roininen bor i eskilstuna och jobbar på säkralarm.' },
-    { fraga: 'Vem är Erik Roininen', svar: 'Den 11 årige Erik Roininen. Han är fotbollsspelare och fritids programerare.' },
-    { fraga: 'Vem skapade dig', svar: 'Den 11 årige Erik Roininen. Han är fotbollsspelare och fritids programerare.' },
+    { fraga: 'Vem är Erik Roininen', svar: 'Den 13 årige Erik Roininen. Han är fotbollsspelare och fritids programerare.' },
+    { fraga: 'Vem skapade dig', svar: 'Den 13 årige Erik Roininen. Han är fotbollsspelare och fritids programerare.' },
     { fraga: 'vart ligger köping?', svar: 'I västmalands län' },
     { fraga: 'Katten Schiba', svar: 'En katt som bor hos Anneli pihlava och Ari-pekka Roininen' },
     { fraga: 'Jag vill ha körv', svar: 'https://www.youtube.com/embed/pdJrOvjbcR8?si=v74tgAUmXyF_iAsp' },
@@ -35,6 +35,13 @@ const fordefinieradeFragorSvar = [
     { fraga: 'Vart ligger eskilstuna', svar: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d65052.88517117265!2d16.424148316725958!3d59.36796344076385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465e93b30aa1e85f%3A0x400fef341e48dd0!2sEskilstuna!5e0!3m2!1ssv!2sse!4v1696070546522!5m2!1ssv!2sse' },
     { fraga: 'När släpptes FC 24', svar: '29 september 2023' },
     { fraga: 'När släpptes EA FC 24', svar: '29 september 2023' },
+    { fraga: 'vem är din skapare', svar: 'Den 13 årige Erik Roininen. Han är en fotbollsspelare och fritids programerare.' },
+    { fraga: 'FC 24', svar: 'Släpptes 29 september 2023' },
+    { fraga: 'ok', svar: 'Jag är glad att få hjälpa dig :)' },
+    { fraga: 'tack', svar: 'Jag är glad att få hjälpa dig :)' },
+    { fraga: 'a', svar: 'a, ok' },
+    { fraga: 'skibidi', svar: 'skibidi toilet?' },
+    { fraga: 'nej', svar: 'ok :(' },
     { fraga: 'FC 24', svar: 'Släpptes 29 september 2023' },
     { fraga: 'SONY', svar: 'Sony Corporation är ett japanskt multinationellt teknikkonglomerat som är ett av världens största i sina branscher.'}
 ];
@@ -104,6 +111,7 @@ function laggTillSvar(svar) {
     meddelandeDiv.textContent = svar;
     meddelandeContainer.appendChild(meddelandeDiv);
 }
+
 
 
 
