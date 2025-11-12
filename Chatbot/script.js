@@ -5,6 +5,7 @@ const meddelandeContainer = document.getElementById('chat-messages');
 
 const fordefinieradeFragorSvar = [
     { fraga: 'Jag vill ha korv', svar: 'https://www.youtube.com/embed/pdJrOvjbcR8?si=v74tgAUmXyF_iAsp' },
+    { fraga: 'neger', svar: 'du är en svart hjävla hora' },
     { fraga: 'jag vill ha en egen måne', svar: 'https://www.youtube.com/embed/HInYeg78sMU?si=BxYFje0RgSulIHw8' },
     { fraga: 'kan du bara säga ok', svar: 'Nej, dumbass' };
     { fraga: 'är du snäll', svar: 'Nej, bögjävel' };
@@ -113,6 +114,7 @@ function laggTillSvar(svar) {
     meddelandeDiv.textContent = svar;
     meddelandeContainer.appendChild(meddelandeDiv);
 }
+
 
 
 
