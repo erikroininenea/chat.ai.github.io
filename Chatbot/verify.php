@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Om koden är korrekt, omdirigera till inloggningsformuläret
     if ($verificationCode == $savedVerificationCode) {
-        header("Location: login.html");
+        header("Location: verification.php");
     } else {
         // Om koden är fel, visa ett felmeddelande
         echo "Felaktig verifikationskod. Försök igen.";
